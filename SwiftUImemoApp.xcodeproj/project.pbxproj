@@ -11,23 +11,23 @@
 		CB38EFA328CE1A7A0041F8EB /* SwiftUImemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF8F28CE1A770041F8EB /* SwiftUImemoApp.xcdatamodeld */; };
 		CB38EFA428CE1A7A0041F8EB /* SwiftUImemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9128CE1A770041F8EB /* SwiftUImemoAppApp.swift */; };
 		CB38EFA528CE1A7A0041F8EB /* SwiftUImemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9128CE1A770041F8EB /* SwiftUImemoAppApp.swift */; };
-		CB38EFA628CE1A7A0041F8EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9228CE1A770041F8EB /* ContentView.swift */; };
-		CB38EFA728CE1A7A0041F8EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9228CE1A770041F8EB /* ContentView.swift */; };
 		CB38EFA828CE1A7A0041F8EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9328CE1A770041F8EB /* Persistence.swift */; };
 		CB38EFA928CE1A7A0041F8EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EF9328CE1A770041F8EB /* Persistence.swift */; };
 		CB38EFAA28CE1A7A0041F8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB38EF9428CE1A7A0041F8EB /* Assets.xcassets */; };
 		CB38EFAB28CE1A7A0041F8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB38EF9428CE1A7A0041F8EB /* Assets.xcassets */; };
+		CB38EFB728CE1ADB0041F8EB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EFB628CE1ADB0041F8EB /* MainListView.swift */; };
+		CB38EFB828CE1ADB0041F8EB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38EFB628CE1ADB0041F8EB /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB38EF9028CE1A770041F8EB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		CB38EF9128CE1A770041F8EB /* SwiftUImemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUImemoAppApp.swift; sourceTree = "<group>"; };
-		CB38EF9228CE1A770041F8EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB38EF9328CE1A770041F8EB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CB38EF9428CE1A7A0041F8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB38EF9928CE1A7A0041F8EB /* SwiftUImemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUImemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB38EF9F28CE1A7A0041F8EB /* SwiftUImemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUImemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB38EFA128CE1A7A0041F8EB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CB38EFB628CE1ADB0041F8EB /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +60,11 @@
 		CB38EF8E28CE1A770041F8EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CB38EFB528CE1AAE0041F8EB /* CoreData */,
+				CB38EFB428CE1AA80041F8EB /* Memory */,
 				CB38EF9128CE1A770041F8EB /* SwiftUImemoAppApp.swift */,
-				CB38EF9228CE1A770041F8EB /* ContentView.swift */,
-				CB38EF9328CE1A770041F8EB /* Persistence.swift */,
+				CB38EFB628CE1ADB0041F8EB /* MainListView.swift */,
 				CB38EF9428CE1A7A0041F8EB /* Assets.xcassets */,
-				CB38EF8F28CE1A770041F8EB /* SwiftUImemoApp.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -84,6 +84,22 @@
 				CB38EFA128CE1A7A0041F8EB /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		CB38EFB428CE1AA80041F8EB /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		CB38EFB528CE1AAE0041F8EB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CB38EF9328CE1A770041F8EB /* Persistence.swift */,
+				CB38EF8F28CE1A770041F8EB /* SwiftUImemoApp.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB38EFA228CE1A7A0041F8EB /* SwiftUImemoApp.xcdatamodeld in Sources */,
+				CB38EFB728CE1ADB0041F8EB /* MainListView.swift in Sources */,
 				CB38EFA828CE1A7A0041F8EB /* Persistence.swift in Sources */,
 				CB38EFA428CE1A7A0041F8EB /* SwiftUImemoAppApp.swift in Sources */,
-				CB38EFA628CE1A7A0041F8EB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB38EFA328CE1A7A0041F8EB /* SwiftUImemoApp.xcdatamodeld in Sources */,
+				CB38EFB828CE1ADB0041F8EB /* MainListView.swift in Sources */,
 				CB38EFA928CE1A7A0041F8EB /* Persistence.swift in Sources */,
 				CB38EFA528CE1A7A0041F8EB /* SwiftUImemoAppApp.swift in Sources */,
-				CB38EFA728CE1A7A0041F8EB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
